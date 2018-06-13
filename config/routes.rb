@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  match 'api/HttpTriggerJS1', to: 'api#log', via: [:get, :post]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
